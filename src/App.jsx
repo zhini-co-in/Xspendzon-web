@@ -6,13 +6,11 @@ import FAQPage from './components/landing/FAQPage';
 
 export default function App() {
   const handleEmployeeLogin = () => {
-    // TODO: route to employee login screen
-    console.log('Employee login clicked');
+    window.location.href = 'https://xsfe.atom8itsolutions.com/';
   };
 
   const handleAdminLogin = () => {
-    // TODO: route to admin login screen
-    console.log('Admin login clicked');
+    window.location.href = 'https://xsfeadmin.atom8itsolutions.com/';
   };
 
   const loginProps = {
