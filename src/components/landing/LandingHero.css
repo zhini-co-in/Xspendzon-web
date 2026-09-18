@@ -1,5 +1,5 @@
 .hero{position:relative;width:100%;overflow:hidden}
-.hero-v2{min-height:590px;background:linear-gradient(110deg,#effff9 0%,#d9fff2 38%,#7ce4bd 100%);color:#11144f;isolation:isolate}
+.hero-v2{min-height:590px;background:linear-gradient(110deg,#effff9 0%,#d9fff2 38%,#7ce4dd 100%);color:#11144f;isolation:isolate}
 .hero-bg-shape{position:absolute;pointer-events:none;z-index:-1}
 .hero-bg-shape-1{width:520px;height:520px;left:-240px;top:-180px;border-radius:50%;background:rgba(86,219,183,.23)}
 .hero-bg-shape-2{width:700px;height:700px;right:-320px;top:-300px;transform:rotate(28deg);background:rgba(40,211,164,.25);clip-path:polygon(42% 0,100% 0,68% 100%,0 100%)}
@@ -34,7 +34,7 @@
 .brand-whatsapp .brand-badge-icon{background:#e7fff0}.whatsapp-icon{width:32px;height:32px;border-radius:50%}.whatsapp-icon svg{width:32px;height:32px}
 .brand-telegram .brand-badge-icon{background:#edf8ff}.telegram-icon{width:32px;height:32px;border-radius:50%}.telegram-icon svg{width:32px;height:32px}
 .brand-track .brand-badge-icon{background:#edfff7}.track-icon{align-items:flex-end;gap:3px;padding:7px 6px}.track-icon i{display:block;width:4px;border-radius:2px 2px 1px 1px;background:#16bd78}.track-icon i:nth-child(1){height:9px}.track-icon i:nth-child(2){height:17px}.track-icon i:nth-child(3){height:24px}
-.brand-settle .brand-badge-icon{background:#fff6df}.settle-icon{color:#ffad00;font-size:27px;font-weight:900}
+.brand-settle .brand-badge-icon{background:#fff6df}.settle-icon{color:#00fff7;font-size:27px;font-weight:900}
 
 /* Currency card intentionally uses the whole badge width so all major flags are visible. */
 .brand-currency{display:grid;grid-template-columns:1fr;align-content:center;gap:5px;padding:9px 11px;min-height:82px}
