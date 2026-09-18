@@ -1,0 +1,233 @@
+.ap {
+  background: #ffffff;
+  color: #0f3d2e;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+/* ---- Hero ---- */
+.ap-hero-shell {
+  background: linear-gradient(
+    to right,
+    #c8e6d4 0%,
+    #8fcbb0 38%,
+    #4a8a6a 58%,
+    #16382c 100%
+  );
+}
+
+.ap-hero {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 56px 24px 72px;
+  text-align: center;
+}
+
+.ap-eyebrow {
+  margin: 0 0 12px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.6px;
+  color: #0f3d2e;
+}
+
+.ap-title {
+  margin: 0 0 4px;
+  font-size: 40px;
+  font-weight: 800;
+  color: #0f3d2e;
+}
+
+.ap-quote {
+  margin: 0 0 18px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #0a5c3c;
+}
+
+.ap-subtitle {
+  margin: 0 auto 32px;
+  max-width: 540px;
+  font-size: 15px;
+  line-height: 1.6;
+  color: #234a3a;
+}
+
+.ap-stats {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+
+.ap-stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  background: rgba(255, 255, 255, 0.55);
+  border-radius: 16px;
+  padding: 14px 24px;
+  min-width: 120px;
+}
+
+.ap-stat-value {
+  font-size: 22px;
+  font-weight: 800;
+  color: #0a5c3c;
+}
+
+.ap-stat-label {
+  font-size: 11.5px;
+  font-weight: 600;
+  color: #3a5c4d;
+}
+
+/* ---- Story ---- */
+.ap-story {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 56px 24px;
+  text-align: center;
+}
+
+.ap-story-title {
+  margin: 0 0 16px;
+  font-size: 24px;
+  font-weight: 800;
+}
+
+.ap-story-body {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.7;
+  color: #47605a;
+}
+
+/* ---- Values ---- */
+.ap-values {
+  background: linear-gradient(180deg, #f5faf7 0%, #eef7f1 100%);
+  padding: 56px 20px;
+}
+
+@media (min-width: 900px) {
+  .ap-values {
+    padding: 56px 48px;
+  }
+}
+
+.ap-values-title {
+  max-width: 1100px;
+  margin: 0 auto 28px;
+  font-size: 24px;
+  font-weight: 800;
+  text-align: center;
+}
+
+.ap-values-grid {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+
+@media (min-width: 640px) {
+  .ap-values-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1000px) {
+  .ap-values-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.ap-value-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  background: #fff;
+  border: 1px solid #e0e8e3;
+  border-radius: 14px;
+  padding: 16px 18px;
+  text-align: left;
+  box-shadow: 0 4px 12px rgba(15, 61, 46, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.ap-value-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 22px rgba(15, 61, 46, 0.12);
+}
+
+.ap-value-icon {
+  width: 38px;
+  height: 38px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background: #e8f5ef;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+}
+
+.ap-value-title {
+  margin: 0 0 4px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #0f3d2e;
+}
+
+.ap-value-desc {
+  margin: 0;
+  font-size: 12.5px;
+  line-height: 1.45;
+  color: #5a6b62;
+}
+
+/* ---- Contact ---- */
+.ap-contact {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 56px 24px 64px;
+  text-align: center;
+}
+
+.ap-contact-title {
+  margin: 0 0 8px;
+  font-size: 24px;
+  font-weight: 800;
+}
+
+.ap-contact-sub {
+  margin: 0 0 28px;
+  font-size: 14px;
+  color: #5a6b62;
+}
+
+.ap-contact-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 14px;
+}
+
+.ap-contact-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: #f5faf7;
+  border: 1px solid #e0e8e3;
+  border-radius: 999px;
+  padding: 10px 18px;
+  font-size: 13.5px;
+  font-weight: 600;
+  color: #0f3d2e;
+  text-decoration: none;
+}
+
+.ap-contact-icon {
+  font-size: 15px;
+}

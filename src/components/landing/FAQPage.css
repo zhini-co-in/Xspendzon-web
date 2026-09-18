@@ -1,0 +1,133 @@
+.faqp {
+  background: #ffffff;
+  color: #0f3d2e;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+/* ---- Hero ---- */
+.faqp-hero-shell {
+  background: linear-gradient(
+    to right,
+    #c8e6d4 0%,
+    #8fcbb0 38%,
+    #4a8a6a 58%,
+    #16382c 100%
+  );
+}
+
+.faqp-hero {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 56px 24px 64px;
+  text-align: center;
+}
+
+.faqp-eyebrow {
+  margin: 0 0 12px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.6px;
+  color: #0f3d2e;
+}
+
+.faqp-title {
+  margin: 0 0 14px;
+  font-size: 34px;
+  font-weight: 800;
+  color: #0f3d2e;
+}
+
+.faqp-subtitle {
+  margin: 0 auto;
+  max-width: 520px;
+  font-size: 15px;
+  line-height: 1.6;
+  color: #234a3a;
+}
+
+/* ---- Accordion list ---- */
+.faqp-list {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 48px 20px 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.faqp-item {
+  background: #fff;
+  border: 1px solid #e0e8e3;
+  border-radius: 14px;
+  overflow: hidden;
+  transition: box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.faqp-item.is-open {
+  border-color: #bfe0cd;
+  box-shadow: 0 8px 20px rgba(15, 61, 46, 0.08);
+}
+
+.faqp-question {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  background: none;
+  border: none;
+  padding: 16px 20px;
+  font-size: 14.5px;
+  font-weight: 700;
+  color: #0f3d2e;
+  text-align: left;
+  cursor: pointer;
+}
+
+.faqp-icon {
+  flex-shrink: 0;
+  width: 26px;
+  height: 26px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: #e8f5ef;
+  color: #0d7a4f;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.faqp-answer {
+  margin: 0;
+  padding: 0 20px 18px;
+  font-size: 13.5px;
+  line-height: 1.6;
+  color: #5a6b62;
+}
+
+/* ---- CTA ---- */
+.faqp-cta {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 48px 24px 64px;
+  text-align: center;
+}
+
+.faqp-cta-title {
+  margin: 0 0 8px;
+  font-size: 22px;
+  font-weight: 800;
+}
+
+.faqp-cta-sub {
+  margin: 0;
+  font-size: 14px;
+  color: #5a6b62;
+}
+
+.faqp-cta-link {
+  color: #0d7a4f;
+  font-weight: 700;
+  text-decoration: none;
+}

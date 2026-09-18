@@ -1,0 +1,261 @@
+.fp {
+  background: #ffffff;
+  color: #0f3d2e;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+/* ---- Hero ---- */
+.fp-hero-shell {
+  background: linear-gradient(
+    to right,
+    #c8e6d4 0%,
+    #8fcbb0 38%,
+    #4a8a6a 58%,
+    #16382c 100%
+  );
+}
+
+.fp-hero {
+  max-width: 780px;
+  margin: 0 auto;
+  padding: 56px 24px 72px;
+  text-align: center;
+}
+
+.fp-eyebrow {
+  margin: 0 0 12px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.6px;
+  color: #0f3d2e;
+}
+
+.fp-title {
+  margin: 0 0 14px;
+  font-size: 38px;
+  font-weight: 800;
+  line-height: 1.15;
+  color: #0f3d2e;
+}
+
+.fp-subtitle {
+  margin: 0 auto 32px;
+  max-width: 560px;
+  font-size: 15px;
+  line-height: 1.6;
+  color: #234a3a;
+}
+
+.fp-stats {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+
+.fp-stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  background: rgba(255, 255, 255, 0.55);
+  border-radius: 16px;
+  padding: 14px 24px;
+  min-width: 120px;
+}
+
+.fp-stat-value {
+  font-size: 22px;
+  font-weight: 800;
+  color: #0a5c3c;
+}
+
+.fp-stat-label {
+  font-size: 11.5px;
+  font-weight: 600;
+  color: #3a5c4d;
+}
+
+/* ---- Category sections ---- */
+.fp-category {
+  padding: 48px 20px;
+}
+
+@media (min-width: 900px) {
+  .fp-category {
+    padding: 56px 48px;
+  }
+}
+
+.fp-category-title {
+  max-width: 1200px;
+  margin: 0 auto 24px;
+  font-size: 22px;
+  font-weight: 800;
+}
+
+.fp-grid {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+  text-align: left;
+}
+
+@media (min-width: 640px) {
+  .fp-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1080px) {
+  .fp-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.fp-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  background: #fff;
+  border-radius: 16px;
+  padding: 18px 20px;
+  box-shadow: 0 6px 16px rgba(15, 61, 46, 0.06);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.fp-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 24px rgba(15, 61, 46, 0.12);
+}
+
+.fp-card-icon {
+  width: 42px;
+  height: 42px;
+  flex-shrink: 0;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 19px;
+}
+
+.fp-card-title {
+  margin: 0 0 4px;
+  font-size: 14.5px;
+  font-weight: 700;
+}
+
+.fp-card-desc {
+  margin: 0;
+  font-size: 12.5px;
+  line-height: 1.5;
+}
+
+/* ---- Category tints ---- */
+.tint-green {
+  background: #f2faf6;
+}
+.tint-green .fp-card-icon {
+  background: #e8f5e9;
+  color: #2e7d32;
+}
+.tint-green .fp-card-desc {
+  color: #4c6c5c;
+}
+
+.tint-blue {
+  background: #eef5fc;
+}
+.tint-blue .fp-card-icon {
+  background: #e3f2fd;
+  color: #1565c0;
+}
+.tint-blue .fp-card-desc {
+  color: #4a6172;
+}
+
+.tint-gold {
+  background: #fffaf0;
+}
+.tint-gold .fp-card-icon {
+  background: #fff8e1;
+  color: #f9a825;
+}
+.tint-gold .fp-card-desc {
+  color: #6c5f45;
+}
+
+.tint-purple {
+  background: #faf5fc;
+}
+.tint-purple .fp-card-icon {
+  background: #f3e5f5;
+  color: #7b1fa2;
+}
+.tint-purple .fp-card-desc {
+  color: #61526b;
+}
+
+.tint-teal {
+  background: #eafaf8;
+}
+.tint-teal .fp-card-icon {
+  background: #e0f7fa;
+  color: #00838f;
+}
+.tint-teal .fp-card-desc {
+  color: #476b6c;
+}
+
+.tint-navy {
+  background: linear-gradient(135deg, #0d1b4b 0%, #16265f 100%);
+  color: #fff;
+}
+.tint-navy .fp-category-title {
+  color: #fff;
+}
+.tint-navy .fp-card {
+  background: rgba(255, 255, 255, 0.06);
+  box-shadow: none;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+.tint-navy .fp-card:hover {
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);
+}
+.tint-navy .fp-card-icon {
+  background: rgba(78, 205, 196, 0.16);
+  color: #4ecdc4;
+}
+.tint-navy .fp-card-title {
+  color: #fff;
+}
+.tint-navy .fp-card-desc {
+  color: #b7c2e0;
+}
+
+/* ---- CTA ---- */
+.fp-cta {
+  margin: 8px 16px 32px;
+  padding: 32px 24px;
+  border-radius: 18px;
+  background: linear-gradient(135deg, #0a5c3c 0%, #0d7a4f 55%, #12946a 100%);
+  box-shadow: 0 14px 30px rgba(10, 92, 60, 0.32);
+  text-align: center;
+}
+
+.fp-cta-title {
+  margin: 0 0 6px;
+  color: #fff;
+  font-size: 22px;
+  font-weight: 800;
+}
+
+.fp-cta-sub {
+  margin: 0;
+  color: #b8e0cc;
+  font-size: 14px;
+}
