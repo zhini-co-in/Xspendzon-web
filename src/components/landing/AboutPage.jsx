@@ -100,10 +100,10 @@ export default function AboutPage({ onEmployeeLogin, onAdminLogin }) {
           Questions about Xspendzon for your organisation? We'd love to talk.
         </p>
         <div className="ap-contact-grid">
-          {/* <a className="ap-contact-item" href="mailto:sesh@trisentrix.com">
+          <a className="ap-contact-item" href="mailto:Xspendzon@zhini.co.in">
             <span className="ap-contact-icon">✉️</span>
-            sesh@trisentrix.com
-          </a> */}
+            Xspendzon@zhini.co.in
+          </a>
           {/* <a
             className="ap-contact-item"
             href="https://www.trisentrix.com"

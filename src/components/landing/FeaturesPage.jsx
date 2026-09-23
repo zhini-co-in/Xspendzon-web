@@ -76,7 +76,7 @@ const CATEGORIES = [
       {
         icon: '💼',
         title: 'Travel advance management',
-        desc: 'Disburse advances before a trip and let Xpendzon calculate the net payable or refund automatically.',
+        desc: 'Disburse advances before a trip and let XSpendzon calculate the net payable or refund automatically.',
       },
       {
         icon: '📐',
@@ -141,7 +141,7 @@ const CATEGORIES = [
     items: [
       {
         icon: '🗣️',
-        title: 'Hindi, Tamil, Telugu, Kannada, Malayalam, Bengali + more',
+        title: 'English, Tamil, Hindi,+ more',
         desc: 'Employees can file, query, or approve expenses in the language they are most comfortable with.',
       },
       {
@@ -167,7 +167,7 @@ export default function FeaturesPage({ onEmployeeLogin, onAdminLogin }) {
           <p className="fp-eyebrow">CAPTURE · APPROVE · TRACK</p>
           <h1 className="fp-title">Everything your finance team needs</h1>
           <p className="fp-subtitle">
-            From invoice snap to bank reconciliation — Xpendzon closes the loop
+            From invoice snap to bank reconciliation — XSpendzon closes the loop
             for your finance team automatically, with zero paperwork.
           </p>
           <div className="fp-stats">
