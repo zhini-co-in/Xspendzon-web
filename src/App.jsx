@@ -6,11 +6,11 @@ import FAQPage from './components/landing/FAQPage';
 
 export default function App() {
   const handleEmployeeLogin = () => {
-    window.location.href = 'https://xsfe.atom8itsolutions.com/';
+    window.location.href = 'https://employee.xspendzon.com/';
   };
 
   const handleAdminLogin = () => {
-    window.location.href = 'https://xsfeadmin.atom8itsolutions.com/';
+    window.location.href = 'https://admin.xspendzon.com/';
   };
 
   const loginProps = {
