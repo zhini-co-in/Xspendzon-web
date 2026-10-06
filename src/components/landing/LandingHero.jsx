@@ -29,7 +29,7 @@ export default function LandingHero() {
           </h1>
 
           <p className="copy-body">
-            Xspendzon makes sharing expenses with friends, roommates,
+            Xspendzon makes sharing Expenses with friends, roommates,
             family, and travel groups effortless. Create a group, add
             expenses, and let Xspendzon handle the math — so you can
             focus on the people, not the payments.
@@ -51,7 +51,7 @@ export default function LandingHero() {
                 </svg>
               </span>
               <span className="store-copy">
-                <small>GET IT ON</small>
+                <small>GET ON</small>
                 <strong>App Store</strong>
               </span>
             </a>
