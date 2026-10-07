@@ -51,7 +51,7 @@ export default function LandingHero() {
                 </svg>
               </span>
               <span className="store-copy">
-                <small>GET ON</small>
+                <small>Available On </small>
                 <strong>App Store</strong>
               </span>
             </a>
