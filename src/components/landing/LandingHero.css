@@ -56,29 +56,41 @@
 
 
 @media (max-width:1280px){
+  .hero-inner{gap:24px;padding-left:26px;padding-right:26px}
+  .hero-copy{flex-basis:420px;max-width:420px}
+  .copy-body{max-width:410px}
+
   .hero-stage{
-    width:100%;
-    justify-content:flex-start;   /* center irundha left side clip aagum */
+    justify-content:flex-start;
     overflow-x:auto;
     overflow-y:hidden;
     -webkit-overflow-scrolling:touch;
-    scroll-snap-type:x proximity;
-    padding-bottom:14px;          /* shadow cut aagama irukka */
+    padding-bottom:14px;
+    scrollbar-width:none;
   }
-  .device-stage{
-    transform:none;               /* scale remove */
-    margin-bottom:0;
-    flex:0 0 926px;
-    width:926px;
-    scroll-snap-align:start;
-  }
-
-  /* optional: scrollbar hide */
   .hero-stage::-webkit-scrollbar{display:none}
-  .hero-stage{scrollbar-width:none}
+  .device-stage{transform:none;margin:0;flex:0 0 926px;width:926px}
+}
+
+@media (max-width:1080px){
+  .hero-inner{flex-direction:column;align-items:stretch;gap:28px;padding:55px 30px 50px}
+  .hero-copy{flex:none;width:100%;max-width:620px;min-width:0;margin:0 auto}
+  .copy-title{font-size:clamp(50px,8vw,72px)}
+  .copy-body{max-width:100%}
+
+  .hero-stage{display:block;flex:none;width:100%;max-width:100%}
 }
 
 @media (max-width:760px){
-  .hero-stage{overflow-x:auto}    /* old overflow:hidden override */
-  .device-stage{transform:none;margin-bottom:0}
+  .hero-inner{padding:42px 18px 36px;gap:24px}
+  .copy-title{font-size:52px;letter-spacing:-2.5px}
+  .copy-body{font-size:14px}
+  .store-row{flex-wrap:wrap}
+}
+
+@media (max-width:520px){
+  .copy-eyebrow{font-size:10px;letter-spacing:1.1px}
+  .copy-title{font-size:44px}
+  .copy-body{font-size:13px}
+  .store-button{min-width:136px}
 }
