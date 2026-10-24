@@ -1,4 +1,5 @@
 import React from 'react';
+import React, { useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import './Layout.css';
 
@@ -10,23 +11,46 @@ export const NAV_LINKS = [
 ];
 
 export function Header({ onEmployee, onAdmin }) {
+  const [open, setOpen] = useState(false);
+  const close = () => setOpen(false);
+
   return (
-    <header className="header">
+    <header className={`header${open ? ' is-open' : ''}`}>
       <div className="header-inner">
         <Logo />
-        <nav className="header-nav">
-          {NAV_LINKS.map((link) => (
-            <NavLink
-              key={link.label}
-              to={link.to}
-              end={link.to === '/'}
-              className={({ isActive }) => (isActive ? 'is-active' : undefined)}
-            >
-              {link.label}
-            </NavLink>
-          ))}
-        </nav>
-        <LoginButtons onEmployee={onEmployee} onAdmin={onAdmin} />
+
+        <button
+          type="button"
+          className="menu-toggle"
+          aria-label={open ? 'Close menu' : 'Open menu'}
+          aria-expanded={open}
+          aria-controls="header-menu"
+          onClick={() => setOpen((o) => !o)}
+        >
+          <span />
+          <span />
+          <span />
+        </button>
+
+        <div className="header-menu" id="header-menu">
+          <nav className="header-nav">
+            {NAV_LINKS.map((link) => (
+              <NavLink
+                key={link.label}
+                to={link.to}
+                end={link.to === '/'}
+                onClick={close}
+                className={({ isActive }) => (isActive ? 'is-active' : undefined)}
+              >
+                {link.label}
+              </NavLink>
+            ))}
+          </nav>
+          <LoginButtons
+            onEmployee={() => { close(); if (onEmployee) onEmployee(); }}
+            onAdmin={() => { close(); if (onAdmin) onAdmin(); }}
+          />
+        </div>
       </div>
     </header>
   );
